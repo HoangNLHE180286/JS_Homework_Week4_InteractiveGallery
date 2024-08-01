@@ -1,0 +1,36 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+}
+
+header {
+    background-color: aquamarine;
+}
+
+nav {
+    background-color: aqua;
+}
+
+main {
+    background-color: antiquewhite;
+    font-size: 15px;
+}
+
+footer {
+    background-color: chartreuse;
+}
+
+li {
+    display: block;
+    width: 50%;
+}
+
+h1 {
+    text-align: center;
+    font-family: cursive;
+    color: red;
+}
+
+p {
+    line-height: 120%;
+}
