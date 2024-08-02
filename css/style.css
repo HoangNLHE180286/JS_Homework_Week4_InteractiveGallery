@@ -9,6 +9,8 @@ header {
 
 nav {
     background-color: aqua;
+    display: inline-block;
+    width: 80%;
 }
 
 main {
@@ -20,10 +22,10 @@ footer {
     background-color: chartreuse;
 }
 
-li {
+/* li {
     display: block;
     width: 50%;
-}
+} */
 
 h1 {
     text-align: center;
@@ -33,4 +35,26 @@ h1 {
 
 p {
     line-height: 120%;
+}
+
+nav img{
+    width: 10%;
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(2, 40%);
+    align-items: start;
+    justify-content: center;
+    row-gap: 10px;
+    column-gap: 10%;
+}
+
+.grid-item{
+    width: 100%;
+}
+
+.flex-container{
+    flex-wrap: wrap-reverse;
+    justify-content: center;
 }
