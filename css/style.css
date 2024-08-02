@@ -55,6 +55,7 @@ nav img{
 }
 
 .flex-container{
-    flex-wrap: wrap-reverse;
-    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
 }
