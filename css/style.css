@@ -67,7 +67,6 @@ h1 {
 main {
     background-color: antiquewhite;
     font-size: 15px;
-    padding: auto;
 }
 
 div img:hover{
@@ -80,7 +79,7 @@ div img:active{
     transition: border .5s;
 }
 
-p {
+main p {
     line-height: 120%;
     font-size: 150%;
 }
@@ -117,5 +116,5 @@ footer {
     background-color: darkgray;
     text-align: center;
     padding: 10px;
-    margin-top: 15%;
+    margin-top: 5%;
 }
