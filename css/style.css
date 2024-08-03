@@ -59,6 +59,9 @@ h1 {
     text-align: center;
     font-family: cursive;
     color: red;
+    background-color: rgba(105, 105, 105, 0.5);
+    margin-left: 20%;
+    margin-right: 20%;
 }
 
 main {
