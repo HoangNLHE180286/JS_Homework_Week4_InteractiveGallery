@@ -2,47 +2,59 @@
 <html lang="en">
 
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <title>Springtime In Michigan</title>
-  <!-- You will need to link to the CSS file -->
-  <link rel="stylesheet" href="css/style.css">
-  <script src="js/app.js"></script>
+    <meta charset="UTF-8">
+    <title>Interactive Gallery - Minecraft Cat Varriants</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/app.js"></script>
 </head>
 
-<body onload="setImg()">
-  <a href="#main_content" tabindex="0" class="skip-to-content">Skip To Main Content</a>
-  <header>
-    <nav>
-      <ul>
-        <li class="current"><a href="index.html">Home</a></li>
-        <li><a href="neighborhood.html">Neighborhood Walks</a></li>
-        <li><a href="parks.html">Walks in the Park</a></li>
-      </ul>
-    </nav>
+<body onload="addTabFocus()">
+    <div id="image">
+        Hover over an image below to display here.
+    </div>
 
-    <img src="images/BaconGallupPark.jpg" width="200" alt="Brown Labradoodle sitting next to a statue." id="headerImg">
-    <h1>Springtime in Michigan</h1>
-  </header>
+    <img class="preview" alt="Tabby" src="https://minecraft.wiki/images/thumb/Tabby_Cat.png/150px-Tabby_Cat.png?ea9ab"
+        onmouseover="upDate(this)" onmouseout="unDo()" onfocus="upDate(this)" onblur="unDo()">
 
-  <main id="main_content">
-    <p>Springtime in <a href="https://www.michigan.org/city/ann-arbor">Ann Arbor</a> is a beautiful time. Even though
-      it can be chilly at times, it is nice to walk my dog Bacon. This site includes some pictures I have taken on
-      these walks. </p>
+    <img class="preview" alt="Tuxedo"
+        src="https://minecraft.wiki/images/thumb/Tuxedo_Cat_JE2_BE2.png/150px-Tuxedo_Cat_JE2_BE2.png?311fe"
+        onmouseover="upDate(this)" onmouseout="unDo()" onfocus="upDate(this)" onblur="unDo()">
 
-    <p>Sometimes we walk around the neighborhood, other times we make it to the woods. Ann Arbor also has some
-      beautiful lakes and rivers including the <a
-        href="https://www.annarbor.org/things-to-do/recreation-outdoors/huron-river/">Huron River Watertrail</a> and
-      the <a href="https://www.a2gov.org/departments/Parks-Recreation/parks-places/argo/pages/default.aspx">Argo Park
-        Cascades</a>.</p>
-  </main>
+    <img class="preview" alt="Red" src="https://minecraft.wiki/images/thumb/Red_Cat.png/150px-Red_Cat.png?41351"
+        onmouseover="upDate(this)" onmouseout="unDo()" onfocus="upDate(this)" onblur="unDo()">
 
-  <footer>
-    <p>This page was originally created by Colleen van Lent for the <a
-        href="https://www.coursera.org/specializations/web-design"> Web Design for Everybody</a> Specialization.
-      Specialization. Students are invited to make changes.</p>
-  </footer>
+    <img class="preview" alt="Siamese"
+        src="https://minecraft.wiki/images/thumb/Siamese_Cat_JE3.png/150px-Siamese_Cat_JE3.png?3b2f8"
+        onmouseover="upDate(this)" onmouseout="unDo()" onfocus="upDate(this)" onblur="unDo()">
 
+    <img class="preview" alt="British Shorthair"
+        src="https://minecraft.wiki/images/thumb/British_Shorthair_Cat.png/150px-British_Shorthair_Cat.png?4be7c"
+        onmouseover="upDate(this)" onmouseout="unDo()" onfocus="upDate(this)" onblur="unDo()">
+
+    <img class="preview" alt="Calico"
+        src="https://minecraft.wiki/images/thumb/Calico_Cat.png/150px-Calico_Cat.png?2555e" onmouseover="upDate(this)"
+        onmouseout="unDo()" onfocus="upDate(this)" onblur="unDo()">
+
+    <img class="preview" alt="Persian"
+        src="https://minecraft.wiki/images/thumb/Persian_Cat.png/150px-Persian_Cat.png?d625e" onmouseover="upDate(this)"
+        onmouseout="unDo()" onfocus="upDate(this)" onblur="unDo()">
+
+    <img class="preview" alt="Ragdoll"
+        src="https://minecraft.wiki/images/thumb/Ragdoll_Cat.png/150px-Ragdoll_Cat.png?7933f" onmouseover="upDate(this)"
+        onmouseout="unDo()" onfocus="upDate(this)" onblur="unDo()">
+
+    <img class="preview" alt="White" src="https://minecraft.wiki/images/thumb/White_Cat.png/150px-White_Cat.png?86826"
+        onmouseover="upDate(this)" onmouseout="unDo()" onfocus="upDate(this)" onblur="unDo()">
+
+    <img class="preview" alt="Jellie"
+        src="https://minecraft.wiki/images/thumb/Jellie_Cat.png/150px-Jellie_Cat.png?e5d99" onmouseover="upDate(this)"
+        onmouseout="unDo()" onfocus="upDate(this)" onblur="unDo()">
+
+    <img class="preview" alt="Black" src="https://minecraft.wiki/images/thumb/Black_Cat.png/150px-Black_Cat.png?95035"
+        onmouseover="upDate(this)" onmouseout="unDo()" onfocus="upDate(this)" onblur="unDo()">
+
+    <img class="preview" alt="Ocelot" src="https://minecraft.wiki/images/thumb/Ocelot.png/150px-Ocelot.png?7d798"
+        onmouseover="upDate(this)" onmouseout="unDo()" onfocus="upDate(this)" onblur="unDo()">
 </body>
 
 </html>

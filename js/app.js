@@ -1,37 +1,37 @@
-function setImg(){
-    opt = [
-        "BaconGallupPark.jpg",
-        "bacon_in_the_woods.png",
-        "bacon_near_the_fort.png",
-        "bend_in_the_road.png",
-        "blooming_trees.png",
-        "downed_tree.png",
-        "falling_petals.png",
-        "fort_in_woods.png",
-        "hanging_plants.png",
-        "hollow_tree.png",
-        "huron_river_cascades.JPG",
-        "lake_view.JPG",
-        "mist_over_huron_river.JPG",
-        "munising.jpg",
-        "pink_blossoms.png",
-        "potted_plants.png",
-        "red_maple.png",
-        "reflected_tree.JPG",
-        "tree_with_white_blooms.png",
-        "tulips.png",
-        "white_buds_on_tree.png"
-    ]
+function upDate(previewPic) {
+    /* In this function you should 
+       1) change the url for the background image of the div with the id = "image" 
+       to the source file of the preview image
+       
+       2) Change the text  of the div with the id = "image" 
+       to the alt text of the preview image 
+       */
+    old = document.getElementById("image").innerHTML
+    document.getElementById("image").innerHTML = previewPic.alt
+    document.getElementById("image").style.background = "url(" + previewPic.src + ")";
+}
 
-    currentImg = document.querySelectorAll("..flex-container img")
-    for (var i = 0; i < currentImg.length; i++){
-        console.log("Image " + i);
+function unDo() {
+    /* In this function you should 
+   1) Update the url for the background image of the div with the id = "image" 
+   back to the orginal-image.  You can use the css code to see what that original URL was
+   
+   2) Change the text  of the div with the id = "image" 
+   back to the original text.  You can use the html code to see what that original text was
+   */
+    document.getElementById("image").innerHTML = old
+    document.getElementById("image").style.background = "#d2691e";
+}
 
-        randomImg = "images/" + opt[Math.floor(Math.random() * opt.length)];
+function addTabFocus() {
+   
+    let images = document.querySelectorAll('.preview');
 
-        currentImg[i].src = randomImg;
-
-        currentImg[i].setAttribute("tabindex", "0")
-    }
     
+    for (let i = 0; i < images.length; i++) {
+        images[i].setAttribute('tabindex', '0');
+
+        
+        console.log("Tabindex added to image " + (i + 1));
+    }
 }
