@@ -6,9 +6,9 @@ body {
 header {
     display: inline-flexbox;
     background-color: aquamarine;
-    background-image: url("../images/BaconGallupPark.jpg");
+    /* background-image: url("../images/BaconGallupPark.jpg");
     background-size: cover;
-    background-position: center;
+    background-position: center; */
     padding-bottom: 15%;
     color: white;
     margin-bottom: 5%;
@@ -70,7 +70,7 @@ main {
     margin-bottom: 10%;
 }
 
-div img:hover{
+div img:hover, img:focus{
     border: 5px solid blue;
     transition: border 1s;
 }
